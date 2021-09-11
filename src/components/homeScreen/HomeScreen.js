@@ -8,12 +8,8 @@ import './HomeScreen.css';
 function HomeScreen() {
     return (
         <div className='homeScreen' >
-            {/* Nav */}
             <NavBar />
-
             <Banner />
-
-            {/* Rows */}
             <Row title='NETFLIX ORIGINALS' fetchUrl={requests.fetchNetflixOriginals} />
             <Row title='Trending Now' fetchUrl={requests.fetchTrending} />
             <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />
