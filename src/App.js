@@ -11,7 +11,6 @@ import { auth } from './firebase';
 import { useDispatch, useSelector } from 'react-redux';
 import { login, logout, selectUser } from './features/userSlice';
 
-// npm install -g firebase-tools
 
 function App() {
   const user = useSelector(selectUser);
@@ -29,7 +28,7 @@ function App() {
       }
     })
     return unsubscribe;
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="app">
